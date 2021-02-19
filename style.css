@@ -1,9 +1,10 @@
-html{height: 500%;}
+html{height: 200%;}
 body{
 	height: 100%;
 	background-color: rgb(246, 247, 252);
-	margin: 0;
+	padding: 20% 0 1% 0;
 }
+
 #nav{
 	height: 10%;
 	width: 96%;
@@ -13,7 +14,7 @@ body{
 	padding: 0 2%;
 	display: flex;
 	justify-content: space-between;
-	background-color: rgba(246, 247, 252, 0.8);
+	background-color: rgb(246, 247, 252);
 	box-shadow: 0 7px 15px rgba(201, 201, 201, 0.9);
 	z-index: 1;
 }
@@ -23,15 +24,13 @@ body{
 	display: flex;
 	align-items: center;
 }
-#logo{
-	height: 100%;
-}
+#logo{height: 100%;}
 #title{
 	height: 30%;
 	margin-left: 2.5%;
 }
 #nav_btns{
-	width: 45%;
+	width: 40%;
 	display: flex;
 	display: flex;
 	justify-content: space-between;
@@ -47,114 +46,85 @@ body{
 #nav_btns a{
 	color: rgb(102, 95, 89);
 	text-decoration: none;
-}#nav_btns a:hover{
-		color: rgb(254, 176, 78);
-}
+}#nav_btns a:hover{color: rgb(254, 176, 78);}
 
 #about_section{
-	height: 20%;
+	height: 36%;
 	width: 100%;
-	background-image: url(images/bg0.jpg);
-	background-size: 80%;
-	background-repeat: no-repeat;
-	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
-#about_section div{
-	height: 40%;
-	width: 95%;
-	background-size: 100% 80%;
-	background-repeat: no-repeat;
-	background-position: center;
+#about_section div{width: 80%;}
+#about, #advertise{
 	color: rgb(246, 247, 252);
+	transition: 1s;
 }
 #about{
-	margin: 15% auto 0% 0;
-	padding: 10% 0 0 5%;
-	background-image: url(images/bg1.png);
+	padding: 3% 0 3% 5%;
+	background-image: linear-gradient(135deg, rgb(254, 176, 78), rgb(216, 110, 31));
 }
 #advertise{
-	margin: 0 0 0 auto;
-	padding: 10% 5% 0 0;
-	background-image: url(images/bg2.png);
-	text-align: right;
+	margin: 3% 0 0 auto;
+	padding: 3% 0 3% 5%;
+	background-image: linear-gradient(300deg, rgb(150, 150, 150), rgb(102, 95, 89));
 }
-#about_section div div{width: 80%;}
-#about_section #advertise div{margin: auto 0 0 auto;}
-#about_section #advertise h3{margin-top: 15%;}
 
-@media(min-width: 500px)
-{
-	#nav{
-		height: 15%;
-	}
-	#logo{
-		margin-left: 3%;
-	}
-	#title{
-		margin-left: 5%;
-	}
-	#nav_btns{
-		width: 36%;
-	}
-	#nav_btns button{
-		font-size: 10pt;
-	}
-	
-	#about_section{
+#services_section{
+	height: 40%;
+	background-color: rgba(255,0,0,0.5);
+}
+
+#contact_section{
 	height: 20%;
-	width: 100%;
-	margin-top: 5%;
-	background-size: cover%;
-	background-position: right;
-	}
-	#about_section div{
-		height: 70%;
-		width: 80%;
-	}
-	#about{
-		margin: 0;
-	}
+	background-color: rgba(0,255,0,0.5);
+	padding: 1%;
+}
+#contact_section h1{
+	text-align: center;
+	color: rgb(216, 110, 31);
+}
+table{
+	height: 72%;
+	width: 90%;
+	margin: 0 auto;
 }
 
-@media(min-width: 800px)
+@media(min-width: 480px)
 {
-	#logo{
-		transition: 0.5s;
-	}#logo:hover{
+	html{height: 360%;}
+	body{padding: 10% 0 0 0;}
+	
+	#nav{height: 15%;}
+	#logo{margin-left: 3%;}
+	#title{margin-left: 5%;}
+	#nav_btns{width: 36%;}
+	#nav_btns button{font-size: 10pt;}
+	
+	#about_section{height: 36%;}
+	#about_section div{width: 60%;}
+	#about_section div div{width: 80%;}
+}
+
+@media(min-width: 1000px)
+{	
+	html{height: 240%;}
+	body{padding: 10% 0 0 0;}
+	
+	#logo{transition: 0.5s;}#logo:hover{
 		transition: 0.5s;
 		transform: scale(1.25, 1.3);
 	}
-	#nav_btns{
-		width: 24%;
-	}
-	#nav_btns button{
-		font-size: 15pt;
-	}
+	#nav_btns{width: 24%;}
+	#nav_btns button{font-size: 15pt;}
 	
-	#about_section{
-	height: 20%;
-	width: 100%;
-	margin-top: 5%;
-	background-size: 70%;
-	display: flex;
-	}
+	#about_section{height: 45%;}
 	#about_section div{
-		height: 50%;
-		width: 50%;
-	}
-	#about{
-		margin-top: 5%;
-		padding: 5% 0 0 5%;
-	}
-	#advertise{
-		margin: 20% 0 0 auto;
-		padding: auto 5% 0 0;
-	}
-	#about_section div h3{font-size: 28pt;}
-	#about_section div div{
-		width: 70%;
+		height: 25%;
+		width: 40%;
 		font-size: 14pt;
 	}
-	#about_section #advertise div{margin: auto 0 0 auto;}
-	#about_section #advertise h3{margin-top: 0;}
+	#about_section h3{font-size: 24pt;}
+	
+	table{width: 60%;}
 }
