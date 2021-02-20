@@ -153,7 +153,8 @@ a{text-decoration: none;}
 	#nav_btns button{font-size: 15pt;}
 	
 	#about_section{height: 45%;}
-	#about_section div{
+	#contact_section table{height: 100%;}
+	#about_section table div{
 		height: 25%;
 		width: 40%;
 		padding-bottom: 6%;
@@ -163,7 +164,6 @@ a{text-decoration: none;}
 	
 	#contact_section h1{font-size: 30pt;}
 	#contact_section table{
-		height: 100%;
 		width: 50%;
 		font-size: 14pt;
 	}
