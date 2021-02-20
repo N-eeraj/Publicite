@@ -1,9 +1,14 @@
 html{height: 200%;}
 body{
 	height: 100%;
+	padding: 20% 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	background-color: rgb(246, 247, 252);
-	padding: 20% 0 1% 0;
 }
+
+a{text-decoration: none;}
 
 #nav{
 	height: 10%;
@@ -43,31 +48,25 @@ body{
 	background-color: transparent;
 	font-size: 8pt;
 }
-#nav_btns a{
-	color: rgb(102, 95, 89);
-	text-decoration: none;
-}#nav_btns a:hover{color: rgb(254, 176, 78);}
+#nav_btns a{color: rgb(102, 95, 89);}#nav_btns a:hover{color: rgb(254, 176, 78);}
 
 #about_section{
 	height: 36%;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 #about_section div{width: 80%;}
 #about, #advertise{
+	padding: 0 0 5% 5%;
 	color: rgb(246, 247, 252);
 	transition: 1s;
 }
-#about{
-	padding: 3% 0 3% 5%;
-	background-image: linear-gradient(135deg, rgb(254, 176, 78), rgb(216, 110, 31));
-}
+#about{background-image: linear-gradient(135deg, rgb(254, 176, 78), rgb(216, 110, 31));}
 #advertise{
-	margin: 3% 0 0 auto;
-	padding: 3% 0 3% 5%;
-	background-image: linear-gradient(300deg, rgb(150, 150, 150), rgb(102, 95, 89));
+	margin: 0 0 0 auto;
+	background-image: linear-gradient(300deg, rgb(125, 125, 125), rgb(102, 95, 89));
 }
 
 #services_section{
@@ -77,23 +76,48 @@ body{
 
 #contact_section{
 	height: 20%;
-	background-color: rgba(0,255,0,0.5);
-	padding: 1%;
+	width: 98%;
+	margin: 0 auto;
+	padding: 5% 0 20% 0;
 }
 #contact_section h1{
 	text-align: center;
 	color: rgb(216, 110, 31);
 }
-table{
-	height: 72%;
-	width: 90%;
+#contact_table{
+	width: 80%;
 	margin: 0 auto;
+	border-collapse: collapse;
+}
+#contact_table tr{
+	margin: auto;
+	display: block;
+}
+#contact_table td{
+	margin-bottom: 5%;
+	display: flex;
+}
+#contact_table div{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+#contact_table img{
+	width: 10%;
+}
+#contact_table a{color: rgb(102, 95, 89);}#contact_table a:hover{color: rgb(254, 176, 78);}
+#contact_table div div{
+	height: 35%;
+	width: 80%;
+	display: block;
+	padding-left: 5%;
 }
 
 @media(min-width: 480px)
 {
 	html{height: 360%;}
-	body{padding: 10% 0 0 0;}
+	body{padding: 10% 0 5% 0;}
 	
 	#nav{height: 15%;}
 	#logo{margin-left: 3%;}
@@ -104,12 +128,21 @@ table{
 	#about_section{height: 36%;}
 	#about_section div{width: 60%;}
 	#about_section div div{width: 80%;}
+	
+	#contact_table{
+		width: 80%;
+		margin: 0 auto 10% auto;
+	}
+	#contact_table h1{
+		margin-block: 0;
+		margin-top: 10%;
+	}
 }
 
 @media(min-width: 1000px)
 {	
 	html{height: 240%;}
-	body{padding: 10% 0 0 0;}
+	body{padding: 10% 0;}
 	
 	#logo{transition: 0.5s;}#logo:hover{
 		transition: 0.5s;
@@ -126,5 +159,4 @@ table{
 	}
 	#about_section h3{font-size: 24pt;}
 	
-	table{width: 60%;}
 }
