@@ -106,7 +106,7 @@ a{text-decoration: none;}
 }
 
 /*Laptop devices*/
-@media(min-width: 1365px) and (orientation: landscape)
+@media(min-width: 1080px) and (orientation: landscape)
 {
 	#nav{
 		justify-content: start;
