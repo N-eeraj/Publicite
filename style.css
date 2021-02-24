@@ -1,170 +1,132 @@
+/*Portrait Devices*/
+
 html{height: 200%;}
 body{
 	height: 100%;
-	padding: 20% 0;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(246, 247, 252);
+}
+
+#nav{
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	background-color: rgba(246, 247, 252, 0.7);
+	box-shadow: 10px 0 10px rgba(201, 201, 201, 0.8);
+	z-index: 1;
+}
+#title{
+	width: 30%;
+	height: 45%;
+}
+#logo{
+	width: auto;
+	height: 100%;
+}
+#hamburger{
+	width: 8%;
+	height: 30%;
+}
+#menu_container{
+	height: 10%;
+	padding-top: 19%;
+	display: none;
+}
+#menu_container #menu{
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	background-color: rgb(246, 247, 252);
+	position: fixed;
+	top: 10%;
+	text-align: center;
+}
+#menu_container #menu a{
+	padding: 7% 0;
+	flex: 1;
+	background-color: rgb(216, 110, 31);
+	color: rgb(246, 247, 252);
 }
 
 a{text-decoration: none;}
 
-#nav{
-	height: 10%;
-	width: 96%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	padding: 0 2%;
-	display: flex;
-	justify-content: space-between;
-	background-color: rgb(246, 247, 252);
-	box-shadow: 0 7px 15px rgba(201, 201, 201, 0.9);
-	z-index: 1;
-}
-#logo_title{
-	height: 100%;
-	width: 52%;
-	display: flex;
-	align-items: center;
-}
-#logo{height: 100%;}
-#title{
-	height: 30%;
-	margin-left: 2.5%;
-}
-#nav_btns{
-	width: 40%;
-	display: flex;
-	display: flex;
-	justify-content: space-between;
-}
-#nav_btns button{
-	margin: 0;
-	padding: 0 1%;
-	border: 0;
-	outline: 0;
-	background-color: transparent;
-	font-size: 8pt;
-}
-#nav_btns a{color: rgb(102, 95, 89);}#nav_btns a:hover{color: rgb(254, 176, 78);}
+#landscape_nav_btn{display: none}
 
-#about_section{
-	height: 36%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-#about_section div{width: 80%;}
-#about, #advertise{
-	padding: 0 0 5% 5%;
-	color: rgb(246, 247, 252);
-	transition: 1s;
-}
-#about{background-image: linear-gradient(135deg, rgb(254, 176, 78), rgb(216, 110, 31));}
-#advertise{
-	margin: 0 0 0 auto;
-	background-image: linear-gradient(300deg, rgb(125, 125, 125), rgb(102, 95, 89));
+/*Mobile devices with ratio 9:18*/
+@media(max-aspect-ratio: 9/17){html{height: 177.78%;}}
+
+/*Mobile devices with ratio 9:20*/
+@media(max-aspect-ratio: 9/19){
+	html{height: 164.1%;}
 }
 
-#services_section{
-	height: 40%;
-	background-color: rgba(255,0,0,0.5);
-}
-
-#contact_section{
-	height: 20%;
-	width: 98%;
-	margin: 0 auto;
-	padding: 5% 0 10% 0;
-}
-#contact_section h1{
-	text-align: center;
-	color: rgb(216, 110, 31);
-}
-#contact_table{
-	width: 80%;
-	margin: 0 auto;
-	border-collapse: collapse;
-}
-#contact_table td{
-	margin-bottom: 5%;
-	display: flex;
-}
-#contact_table div{
-	height: 100%;
-	width: 100%;
-	display: flex;
-	align-items: center;
-}
-#contact_table img{width: 10%;}
-#contact_table a{color: rgb(102, 95, 89);}#contact_table a:hover{color: rgb(254, 176, 78);}
-#contact_table div div{
-	height: 35%;
-	width: 80%;
-	display: block;
-	padding-left: 5%;
-}
-
-@media(min-width: 480px)
+/*Tablet devices*/
+@media(min-width:768px)
 {
-	html{height: 360%;}
-	body{padding: 10% 0 5% 0;}
-	
-	#nav{height: 15%;}
-	#logo{margin-left: 3%;}
-	#title{margin-left: 5%;}
-	#nav_btns{width: 36%;}
-	#nav_btns button{font-size: 10pt;}
-	
-	#about_section{height: 36%;}
-	#about_section div{width: 60%;}
-	#about_section div div{width: 80%;}
-	
-	#contact_section h1{
-		margin-block: 0;
-		margin: 7% 0 3% 0;
-	}
-	#contact_table{
-		height: 80%;
-		width: 60%;
-		margin: 0 auto 10% auto;
-	}
-	#contact_table td{
-		width: 50%;
-		display: table-cell;
-	}
-	#contact_table img{width: 15%;}
-	
+	#hamburger{width: 6%;}
 }
 
-@media(min-width: 1000px)
-{	
-	html{height: 240%;}
-	body{padding: 10% 0;}
-	
-	#logo{transition: 0.5s;}#logo:hover{
-		transition: 0.5s;
-		transform: scale(1.25, 1.3);
+
+/*Landscape Devices/
+
+/*Mobile devices*/
+@media(orientation: landscape)
+{
+	#nav{
+		height: 15%;
+		justify-content: space-between;
 	}
-	#nav_btns{width: 24%;}
-	#nav_btns button{font-size: 15pt;}
-	
-	#about_section{height: 45%;}
-	#contact_section table{height: 100%;}
-	#about_section table div{
-		height: 25%;
-		width: 40%;
-		padding-bottom: 6%;
-		font-size: 14pt;
+	#logo{
+		width: auto;
+		height: 150%;
+		margin-left: 3%;
 	}
-	#about_section h3{font-size: 24pt;}
-	
-	#contact_section h1{font-size: 30pt;}
-	#contact_section table{
-		width: 50%;
-		font-size: 14pt;
+	#title{
+		width: 25%;
+		height: 60%;
 	}
+	#landscape_nav_btn{
+		width: 30%;
+		display: flex;
+		justify-content: space-between;
+		margin-right: 2%;
+	}
+	#landscape_nav_btn a{color: rgb(102, 95, 89);}#landscape_nav_btn a:hover{color: rgb(254, 176, 78);}
+	#hamburger{display: none;}
+	#menu_container{display: none;}
 }
+
+/*Tablet devices*/
+@media(min-width: 1023px) and (orientation: landscape)
+{
+	#landscape_nav_btn a{font-size: 2.5vw;}
+}
+
+/*Laptop devices*/
+@media(min-width: 1365px) and (orientation: landscape)
+{
+	#nav{
+		justify-content: start;
+	}
+	#title{
+		width: 20%;
+		margin-left: 3%;
+	}
+	#landscape_nav_btn{
+		width: 20%;
+		margin-left: 42%;
+	}
+	#landscape_nav_btn a{font-size: 1.5vw;}
+}
+
+
+
+
+
+
+
+
+
