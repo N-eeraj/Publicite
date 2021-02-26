@@ -7,84 +7,46 @@
 		<link rel='shortcut icon' type=images/x-icon href=images/logo_white.png>
 		<link rel=stylesheet href=style.css>
 	</head>
-	<body id=top_section>
+	<body>
 		<div id=nav>
-			<div id=logo_title>
-				<img id=logo src=images/logo_black.png>
-				<img id=title src=images/title.png>
-			</div>
-			<div id=nav_btns>
-				<button id=btn_home><a href=#top_section>Home</a></button>
-				<button id=btn_services><a href=#services_section>Services</a></button>
-				<button id=btn_contact><a href=#contact_section>Contact</a></button>
+			<img src=images/logo_black.png id=logo>
+			<img src=images/title.png id=title>
+			<img src=images/hamburger.png id=hamburger onClick=fnShowMenu()>
+			<div id=landscape_nav_btn>
+				<a href=#content>Home</a>
+				<a href=#service_section_link>Services</a>
+				<a href=#contact_section>Contact</a>
 			</div>
 		</div>
-		<div id=about_section>
-			<div id=about>
-				<h3>About Us</h3>
-				<div>
-					Publicite is a start-up company based on digital media services and social media marketing.
-					Our goal is to provide various media services & marketing service digitally to everyone at low cost.
+		<div id=menu_container>
+			<div id=menu>
+				<a href=#content onClick=fnInternalLink()>Home</a>
+				<a href=#service_section_link onClick=fnInternalLink()>Services</a>
+				<a href=#contact_section onClick=fnInternalLink()>Contact</a>
+			</div>
+		</div>
+		<div id=content>
+			<div id=home_section>
+				<div id=about_section>
+					<h2>About Us</h2>
+					<div>
+						Publicite is a start-up company based on digital media services and social media marketing. 
+						Our goal is to provide various media services & marketing service digitally to everyone at low cost.
+					</div>
+				</div>
+				<div id=advertise_section>
+					<h2>Where We Advertise</h2>
+					<div id=service_section_link>
+						We advertise on various social media platforms such as Instagram and Facebook. 
+						We also provide short duration advertisements as Instagram stories and WhatsApp statuses to gain viewers.
+					</div>
 				</div>
 			</div>
-			<div id=advertise>
-				<h3>Where We Advertise</h3>
-				<div>
-					We advertise on various social media platforms such as Instagram and Facebook. 
-					We also provide short duration advertisements as Instagram stories and WhatsApp statuses to gain viewers.
-				</div>
+			<div id=service_section>
 			</div>
-		</div>
-		<div id=services_section>
-		</div>
-		<div id=contact_section>
-			<h1>Contact Us</h2>
-			<table id=contact_table>
-				<tr>
-					<td><div>
-						<img src=images/telephone.png>
-						<div>
-							<a href='tel:+919946673327' target=_blank>9946673327</a>
-							<br>
-							<a href='tel:+919562686588' target=_blank>9562686588</a>
-						</div>
-					</div></td>
-					<td><div>
-						<img src=images/location.png>
-						<div>
-							<a href=https://www.google.com/maps/place/PUBLICITE/@11.3301374,75.7640733,169m/data=!3m1!1e3!4m8!1m2!2m1!1sAmbalappadi,+Eranhikkal+Kozhikode,+Kerala+673303!3m4!1s0x3ba65f7942e49e2b:0x445ef5b803154091!8m2!3d11.3301374!4d75.7646205 target=_blank>Ambalappadi, Eranhikkal Kozhikode, Kerala 673303</a>
-						</div>
-					</div></td>
-				</tr>
-				<tr>
-					<td><div>
-						<img src=images/whatsapp.png>
-						<div>
-							<a href=https://wa.me/917736189647?text=I%20would%20like%20know%20more%20about%20your%20services target=_blank>7736189647</a>
-						</div>
-					</div></td>
-					<td><div>
-						<img src=images/instagram.png>
-						<div>
-							<a href=https://www.instagram.com/publicite_company/ target=_blank>@publicite_company</a>
-						</div>
-					</div></td>
-				</tr>
-				<tr>
-					<td><div>
-						<img src=images/facebook.png>
-						<div>
-							<a href= target=_blank></a>
-						</div>
-					</div></td>
-					<td><div>
-						<img src=images/gmail.png>
-						<div>
-							<a href= mailto:publicitecompany@gmail.com target=_blank>publicitecompany@gmail.com</a>
-						</div>
-					</div></td>
-				</tr>
-			</table>
+			<div id=contact_section>
+			</div>
 		</div>
 	</body>
 </html>
+<script src=script.js></script>
