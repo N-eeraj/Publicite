@@ -88,8 +88,40 @@ body{
 
 #service_section{
 	height: 26.31%;
-	background-color: green;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+#service_section h1{
+	height: 15%;
+	margin: auto 0 0 0;
+	color: rgb(216, 110, 31);
+}
+#service_section button{
+	border: 0;
+	background-color: transparent;
+}
+#service_section #tabs{
+	width: 100%;
+	height: 12%;
+	display: flex;
+	background-color: rgb(102, 95, 89);
+}
+#service_section #tabs button{
+	flex: 1;
+	color: rgb(246, 247, 252);
+}#service_section #tabs button:hover{color: rgb(254, 176, 78);}
+#service_section #slide{
+	width: 100%;
+	height: 66%;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+#service_section #slide button{font-size: 10vw;}
+
+
 #contact_section{
 	height: 36.84%;
 	background-color: blue;
@@ -144,6 +176,9 @@ a{text-decoration: none;}
 		font-size: 3.5vw;
 		width: 80%;
 	}
+	
+	#service_section h1{font-size: 6.3vw;}
+	#service_section #tabs button{font-size: 3vw;}
 }
 
 
@@ -156,7 +191,6 @@ a{text-decoration: none;}
 	
 	#nav{
 		height: 15%;
-		justify-content: space-between;
 	}
 	#logo{
 		width: auto;
@@ -176,7 +210,10 @@ a{text-decoration: none;}
 	#landscape_nav_btn a{color: rgb(102, 95, 89);}#landscape_nav_btn a:hover{color: rgb(254, 176, 78);}
 	#hamburger{display: none;}
 	
-	#content{padding-top: 5%;}
+	#content{
+		padding-top: 5%;
+		justify-content: start;
+	}
 	
 	#home_section{
 		width: 98%;
@@ -196,6 +233,9 @@ a{text-decoration: none;}
 		width: 80%;
 		font-size: 2.8vw;
 	}
+	
+	#service_section h1{height: 10%;}
+	#service_section #tabs button{font-size: 3vw;}
 }
 
 /*Mobile devices with ratio 9:18*/
@@ -209,6 +249,13 @@ a{text-decoration: none;}
 	}
 	#home_section div h2{font-size: 4.2vw;}
 	#home_section div div{font-size: 2.4vw;}
+	
+	#service_section{
+	}
+	#service_section h1{
+		height: 12%;
+		margin: 7% 0 3% 0;
+	}
 }
 
 /*Tablet devices*/
@@ -218,10 +265,16 @@ a{text-decoration: none;}
 	
 	#landscape_nav_btn a{font-size: 2.5vw;}
 	
+	#content{padding-top: 15%;}
+	
 	#home_section{height: 25%;}
 	#home_section div{
 		width: 66%;
 		height: 45%;
+	}
+	
+	#service_section h1{
+		margin: 12% 0 3% 0;
 	}
 }
 
@@ -243,17 +296,17 @@ a{text-decoration: none;}
 	}
 	#landscape_nav_btn a{font-size: 1.5vw;}
 	
-	#content{padding-top: 0;}
+	#content{padding-top: 8%;}
 	#home_section{
 		height: 15%;
 		flex-direction: row;
+		align-items: center;
 	}
 	#home_section div{
 		width: 45%;
 		height: 75%;
 	}
-	#about_section{margin-top: 5%;}
-	#advertise_section{margin-top: 15%;}
+	#advertise_section{margin-top: 20%;}
 	#home_section div h2{
 		font-size: 2.8vw;
 	}
@@ -261,6 +314,16 @@ a{text-decoration: none;}
 		width: 70%;
 		font-size: 1.5vw;
 	}
+	
+	#service_section h1{
+		height: 7%;
+		font-size: 4.5vw;
+	}
+	#service_section{height: 36%;}
+	#service_section #tabs{height: 8%;}
+	#service_section #tabs button{font-size: 2.5vw;}
+	#service_section #slide{height: 70%;}
+	
 }
 
 
