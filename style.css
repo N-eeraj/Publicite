@@ -1,1 +1,12 @@
- 
+a:focus, button:focus{
+    outline: 1px solid rgba(255, 155, 55, 0.5);
+}
+
+.navbar{
+    padding: 0 3vw;
+    box-shadow: 0 1vh 5px 1px #0002;
+}
+
+.nav-icon{
+     height: 10vh;
+}
