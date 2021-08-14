@@ -2,6 +2,7 @@ a:focus, button:focus{
     outline: 1px solid rgba(255, 155, 55, 0.5);
 }
 
+/* navbar section */
 .navbar{
     padding: 0 3vw;
     box-shadow: 0 1vh 5px 1px #0002;
@@ -9,4 +10,22 @@ a:focus, button:focus{
 
 .nav-icon{
      height: 10vh;
+}
+
+body{
+    padding-top: 20vh;
+}
+
+/* about section */
+.about-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-div{
+    margin: 3%;
+    padding: 3%;
 }
