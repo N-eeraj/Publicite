@@ -13,7 +13,7 @@ a:focus, button:focus{
 }
 
 body{
-    padding-top: 10vh;
+    padding: 10vh 0;
 }
 
 .my-section{
@@ -38,6 +38,49 @@ p{
     padding: 3%;
 }
 
+/* service section */
+.my-tab:hover{
+    border: none;
+}
+
 .active-tab{
     color: rgb(255, 155, 55)!important;
+}
+
+.service-images{
+    height: 25vh;
+    /* background-image: url("images/design_tab.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* media queries */
+@media screen and (min-width: 600px)
+{
+    .service-images{
+        height: 40vh;
+    }
+}
+
+@media screen and (orientation: landscape)
+{
+    .service-images{
+        height: 30vw;
+    }
+}
+
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #111;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(#FA0C, #F50C);
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-image: linear-gradient(#FA0, #F50);
 }
