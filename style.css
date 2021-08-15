@@ -13,7 +13,15 @@ a:focus, button:focus{
 }
 
 body{
-    padding-top: 20vh;
+    padding-top: 10vh;
+}
+
+.my-section{
+    margin-top: 5vh;
+}
+
+p{
+    margin-top: 1vh;
 }
 
 /* about section */
@@ -28,4 +36,8 @@ body{
 .about-div{
     margin: 3%;
     padding: 3%;
+}
+
+.active-tab{
+    color: rgb(255, 155, 55)!important;
 }
