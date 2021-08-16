@@ -1,5 +1,5 @@
-a:focus, button:focus{
-    outline: 1px solid rgba(255, 155, 55, 0.5);
+html{
+    scroll-behavior: smooth;
 }
 
 /* navbar section */
@@ -12,12 +12,17 @@ a:focus, button:focus{
      height: 10vh;
 }
 
+.my-main-nav:hover{
+    color: #F50 !important;
+    font-weight: bold;
+}
+
 body{
-    padding: 10vh 0;
+    padding-top: 10vh;
 }
 
 .my-section{
-    margin-top: 5vh;
+    padding-top: 3vh;
 }
 
 p{
@@ -53,6 +58,11 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* contact section */
+.foot-logo{
+    width: 100%;
 }
 
 
