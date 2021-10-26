@@ -1,111 +1,16 @@
+:root{
+    --primary: #EEE;
+    --secondary: #FFAD33;
+    --tertiary: #333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
-}
-
-a{
-    text-decoration: none;
-}
-
-/* navbar section */
-.navbar{
-    padding: 0 3vw;
-    box-shadow: 0 1vh 5px 1px #0002;
-}
-
-.nav-icon{
-     height: 10vh;
-}
-
-.my-main-nav:hover{
-    color: #F50 !important;
-    font-weight: bold;
-}
-
-body{
-    padding-top: 10vh;
-}
-
-.my-section{
-    margin-top: 3vh;
-    padding-top: 3vh;
-}
-
-p{
-    margin-top: 1vh;
-}
-
-/* about section */
-.about-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.about-div{
-    margin: 3%;
-    padding: 3%;
-}
-
-/* service section */
-.my-tab:hover{
-    border: none;
-}
-
-.active-tab{
-    color: rgb(255, 155, 55)!important;
-}
-
-.service-images{
-    height: 25vh;
-    /* background-image: url("images/design_tab.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* contact section */
-.foot-logo{
-    width: 100%;
-}
-
-.contact-container{
-    margin: 1vh auto;
-}
-.contact-container a{
-    color: #EEE;
-}
-
-.my-contact{
-    margin: 2.5vh 0;
-}
-
-/* media queries */
-@media screen and (min-width: 600px)
-{
-    .service-images{
-        height: 40vh;
-    }
-}
-
-@media screen and (orientation: landscape)
-{
-    .service-images{
-        height: 30vw;
-    }
-}
-
-
-/* scrollbar */
-::-webkit-scrollbar{
-    width: 10px;
-    background-color: #111;
-}
-::-webkit-scrollbar-thumb{
-    background-image: linear-gradient(#FA0C, #F50C);
-    border-radius: 30px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background-image: linear-gradient(#FA0, #F50);
 }

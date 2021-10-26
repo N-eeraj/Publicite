@@ -1,138 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publicite</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicite</title>
+  <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+  <meta name="description" content="Publicite is a start-up company based on digital media services and social media marketing. Our goal is to provide various media services & marketing service digitally to everyone at low cost.">
+  <meta property="og:title" content="Publicite: Design, Publish, Promote">
+  <meta property="og:image" content="https://instagram.fcok2-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/121133487_3109245572538063_4861733772810751588_n.jpg?_nc_ht=instagram.fcok2-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=aO_NSzmXZ0EAX82aT_a&edm=AABBvjUBAAAA&ccb=7-4&oh=3d5906cb2e22cf689abe1138d116867c&oe=617EF96A&_nc_sid=83d603">
+  <meta property="og:type" content="Publicite Website">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </head>
 <body>
-
-    <!-- Bootstrap Navigation Bar -->
-
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="images/icon.png" alt="logo" class="nav-icon">
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link my-main-nav" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link my-main-nav" href="#service">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link my-main-nav" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <!-- About Section -->
-
-      <section class="my-section about-section">
-          
-        <div class="col-11 col-sm-9 col-md-7 col-lg-5 about-div bg-warning">
-            <h2 class="text-dark">About Us</h2>
-            <p class="text-dark">
-                Publicite is a start-up company based on digital media services and social media marketing. Our goal 
-                is to provide various media services & marketing service digitally to everyone at low cost.
-            </p>
-        </div>
-          
-        <div class="col-11 col-sm-9 col-md-7 col-lg-5 about-div bg-dark">
-            <h2 class="text-light">Where We Advertise</h2>
-            <p class="text-light">
-                We advertise on various social media platforms such as Instagram and Facebook. We also provide 
-                short duration advertisements as Instagram stories and WhatsApp statuses to gain viewers.
-            </p>
-        </div>
-
-      </section>
-
-      <!-- Service Section -->
-
-      <section class="my-section" id="service">
-
-        <h2 class="text-center">Our Services</h2>
-
-        <ul class="nav nav-tabs nav-fill bg-dark">
-          <li class="nav-item">
-            <button class="nav-link text-light my-tab active-tab" id="design_tab" onclick="switchTab('design_tab')">Design</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link text-light my-tab" id="social_media_tab" onclick="switchTab('social_media_tab')">Social Media</button>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link text-light my-tab" id="editing_tab" onclick="switchTab('editing_tab')">Editing</button>
-          </li>
-        </ul>
-
-        <div class="service-images" id="service-images"></div>
-
-        <!-- Contact Section -->
-
-        <section class="container-fluid my-section bg-dark" id="contact" style="padding-top: 5vh; padding-bottom: 5vh;">
-
-          <h2 class="text-center text-light">Contact Us</h2>
-
-          <div class="container row justify-content-start align-items-center contact-container">
-
-            <div class="row justify-content-center align-items-center my-contact col-11 col-sm-6 col-lg-4">
-              <img src="https://eduabroadservices.com/img/call.png" alt="phone" class="col-3">
-              <div class="col-8">
-                <a href="tel:+919946673327">+91 9946673327</a>
-                <br>
-                <a href="tel:+919562686588">+91 9562686588</a>
-              </div>
-            </div>
-
-            <div class="row justify-content-center align-items-center my-contact col-11 col-sm-6 col-lg-4">
-              <img src="https://icon-library.com/images/instagram-circle-icon-png/instagram-circle-icon-png-4.jpg" alt="ig" class="col-3">
-              <div class="col-8">
-                <a href="https://instagram.com/publicite_company?utm_medium=copy_link" target="blank">@publicite_company</a>
-              </div>
-            </div>
-
-            <div class="row justify-content-center align-items-center my-contact col-11 col-sm-6 col-lg-4">
-              <img src="https://cdn2.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-whatsapp-circle-512.png" alt="wa" class="col-3">
-              <div class="col-8">
-                <a href="https://wa.me/+917736189647" target="blank">+91 7736189647</a>
-              </div>
-            </div>
-
-            <div class="row justify-content-center align-items-center my-contact col-11 col-sm-6 col-lg-4">
-              <img src="https://cdn.icon-icons.com/icons2/730/PNG/512/gmail_icon-icons.com_62758.png" alt="mail" class="col-3">
-              <div class="col-8">
-                <a href="mailto:publicitecompany@gmail.com" target="blank">publicitecompany@gmail.com</a>
-              </div>
-            </div>
-
-            <div class="row justify-content-center align-items-center my-contact col-11 col-sm-6 col-lg-4">
-              <img src="https://icons-for-free.com/iconfiles/png/512/direction+gps+location+map+marker+navigation+icon-1320196712071639427.png" alt="location" class="col-3">
-              <div class="col-8">
-                <a href="https://www.google.com/maps/place/PUBLICITE/@11.3301427,75.7624318,17z/data=!3m1!4b1!4m5!3m4!1s0x3ba65f7942e49e2b:0x445ef5b803154091!8m2!3d11.3301386!4d75.7645991" target="blank">
-                  Ambalappadi, Eranhikkal Kozhikode, Kerala 673303
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-        </section>
-
-      </section>
-    
+  
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-<script src="script.js"></script>
 </html>
