@@ -7,10 +7,124 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
+    border: 0;
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* nav section */
+nav{
+    width: 100vw;
+    aspect-ratio: 6;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div:first-child{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+nav > div:first-child div{
+    margin-right: 3vw;
+    font-size: 5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav img{
+    height: 7vh;
+}
+
+#menu{
+    height: 5vh;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+#menu hr{
+    width: 100%;
+    height: 15%;
+    position: relative;
+    background-color: var(--secondary);
+    border-radius: 24px;
+    transition: 800ms;
+}
+nav ul{
+    width: 80vw;
+    height: 60vh;
+    padding: 10vh 0 30vh 20vw;
+    box-sizing: content-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--primary);
+    font-weight: 600;
+    font-size: 3.2vh;
+    list-style: none;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 400ms;
+    z-index: 1;
+}
+nav a{
+    color: var(--tertiary);
+}
+
+.first-hr{
+  transform: translateY(210%) rotateZ(45deg);
+}
+.second-hr{
+  transform: scaleX(0);
+}
+.last-hr{
+  transform: translateY(-210%) rotateZ(-45deg);
+}
+.open-menu{
+    transform: scaleX(1);
+}
+
+@media screen and (orientation: landscape) {
+    nav{
+        height: 15vh;
+    }
+    nav > div:first-child div{
+        margin-right: 2vw;
+        font-size: 3.8vh;
+    }
+    nav img{
+        height: 7vw;
+    }
+    #menu{
+        display: none;
+    }
+    nav ul{
+        width: 36vw;
+        height: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        transform: scaleX(1);
+    }
 }
