@@ -11,9 +11,9 @@ $(document).ready(function () {
     $('#menu').on('click', menuToggle);
     $('nav a').on('click', menuToggle);
 
-    $('#loader').css('display', 'none');
-
 });
+
+window.onload = () => $('#loader').css('transform', 'scaleY(0)');
 
 const menuToggle = () => {
     $('nav ul').toggleClass('open-menu');

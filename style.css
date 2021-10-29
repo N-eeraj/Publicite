@@ -90,7 +90,7 @@ nav ul{
     font-weight: 600;
     font-size: 3.2vh;
     list-style: none;
-    transform: scaleX(0);
+    transform: translateX(100vw);
     transform-origin: right;
     transition: 400ms;
     z-index: 1;
@@ -110,7 +110,7 @@ nav a{
   transform: translateY(-1.5vh) rotateZ(-45deg);
 }
 .open-menu{
-    transform: scaleX(1);
+    transform: translateX(0);
 }
 
 /* header */
@@ -255,6 +255,8 @@ header img{
     justify-content: center;
     align-items: center;
     background-color: var(--tertiary);
+    transform-origin: top;
+    transition: 400ms;
     z-index: 3;
 }
 #loader div{
