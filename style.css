@@ -40,8 +40,8 @@ nav{
     z-index: 1;
 }
 .nav-scroll{
-    background-color: #FFFD;
-    backdrop-filter: blur(5px);
+    background-color: #FFF;
+    box-shadow: 0 3px 5px #7777;
 }
 
 nav > div:first-child{
@@ -86,7 +86,7 @@ nav ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
     font-weight: 600;
     font-size: 3.2vh;
     list-style: none;
@@ -96,13 +96,10 @@ nav ul{
     z-index: 1;
 }
 nav a{
-    color: var(--tertiary);
+    color: var(--primary);
     transition: 500ms;
 }
 
-.first-hr, .last-hr{
-    background-color: var(--primary) !important;
-}
 .first-hr{
   transform: translateY(1.5vh) rotateZ(45deg);
 }
@@ -246,6 +243,35 @@ header img{
 
     #about{
         padding-top: 15vh;
+    }
+}
+
+#loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary);
+    z-index: 3;
+}
+#loader div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1vh solid var(--secondary);
+    border-top-color: transparent;
+    animation: spin infinite 1s linear;
+}
+
+@keyframes spin{
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(360deg);
     }
 }
 

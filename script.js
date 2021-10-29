@@ -9,8 +9,9 @@ $(document).ready(function () {
     }
 
     $('#menu').on('click', menuToggle);
-
     $('nav a').on('click', menuToggle);
+
+    $('#loader').css('display', 'none');
 
 });
 
