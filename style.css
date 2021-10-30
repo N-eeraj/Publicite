@@ -183,13 +183,17 @@ header img{
     flex-direction: row-reverse;
 }
 #about img{
-    width: 30vw;
+    width: 30%;
 }
 #about figcaption{
-    width: 50vw;
+    width: 50%;
 }
 #about h3{
     margin-bottom: 2vh;
+    font-size: 6vw;
+}
+#about p{
+    color: var(--tertiary);
 }
 
 
@@ -270,6 +274,22 @@ header img{
     #about{
         padding-top: 15vh;
     }
+    #about div{
+        padding: 5% 15%;
+        border-radius: 175px 0;
+        row-gap: 30px;
+    }
+    #about img{
+        width: 30%;
+    }
+    #about figcaption{
+        width: 50%;
+    }
+    #about h3{
+        font-size: 4vh;
+    }
+
+
 }
 
 #loader{
