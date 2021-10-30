@@ -8,7 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 0;
+    border: none;
+    outline: none;
 }
 
 html{
@@ -150,7 +151,7 @@ header a{
     cursor: pointer;
     transition: 200ms;
 }
-header a:hover{
+header a:hover, header a:focus{
     background-color: var(--primary);
     color: var(--secondary);
     border-color: var(--secondary);
@@ -196,6 +197,23 @@ header img{
     color: var(--tertiary);
 }
 
+body > a{
+    width: 16vw;
+    height: 16vw;
+    position: fixed;
+    right: 3.2vw;
+    bottom: 3.2vw;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px var(--tertiary);
+    z-index: 3;
+    transition: 400ms;
+}
+body > a> img{
+    width: 100%;
+}
+body > a:hover, body > a:focus{
+    box-shadow: 0 0 9px green;
+}
 
 @media screen and (orientation: landscape)
 {
@@ -234,7 +252,7 @@ header img{
         line-height: 15vh;
         opacity: 0.9;
     }
-    nav a:hover{
+    nav a:hover, nav a:focus{
         transform: translateY(-1vh);
         opacity: 1;
         text-decoration: underline 2px solid var(--secondary);
@@ -289,6 +307,14 @@ header img{
         font-size: 4vh;
     }
 
+    body > a{
+        width: 14vh;
+        height: 14vh;
+        max-width: 75px;
+        max-height: 75px;
+        right: 3.2vh;
+        bottom: 3.2vh;
+    }
 
 }
 
@@ -311,7 +337,7 @@ header img{
     border-radius: 50%;
     border: 1vh solid var(--secondary);
     border-top-color: transparent;
-    animation: spin infinite 1s linear;
+    animation: spin infinite 800ms linear;
 }
 
 @keyframes spin{
