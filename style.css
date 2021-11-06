@@ -100,6 +100,10 @@ nav a{
     color: var(--primary);
     transition: 500ms;
 }
+.active-nav{
+    color: var(--secondary) !important;
+    opacity: 1 !important;
+}
 
 .first-hr{
   transform: translateY(1.5vh) rotateZ(45deg);
@@ -160,10 +164,11 @@ header img{
     width: 95%;
 }
 
-/* about */
-#about{
+section{
     padding-top: 6vh;
 }
+
+/* about */
 #about div{
     min-height: 100vh;
     padding: 0 5vw;
@@ -191,12 +196,164 @@ header img{
 }
 #about h3{
     margin-bottom: 2vh;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 #about p{
     color: var(--tertiary);
 }
 
+/* services */
+#service > div > div:first-child{
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: var(--tertiary);
+}
+#service button{
+    flex: 1;
+    background-color: transparent;
+    color: var(--primary);
+    font-size: 2vh;
+    cursor: pointer;
+}
+.active-service{
+    color: var(--secondary) !important;
+}
+#service > div > div:last-child{
+    aspect-ratio: 2;
+    overflow-x: scroll;
+}
+#service > div > div:last-child::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel{
+    height: 100%;
+    display: none;
+}
+.carousel-active{
+    display: flex;
+}
+
+#carousel_designing{
+    width: 700%;
+    animation: six-sildes 18s infinite linear;
+}
+#carousel_designing img{
+    width: calc(100%/7);
+}
+@keyframes six-sildes {
+    0%{
+        margin-left: 0;
+    }
+    13%{
+        margin-left: 0;
+    }
+    16.66%{
+        margin-left: -100%;
+    }
+    29.66%{
+        margin-left: -100%;
+    }
+    33.32%{
+        margin-left: -200%;
+    }
+    46.32%{
+        margin-left: -200%;
+    }
+    49.98%{
+        margin-left: -300%;
+    }
+    62.98%{
+        margin-left: -300%;
+    }
+    66.64%{
+        margin-left: -400%;
+    }
+    79.64%{
+        margin-left: -400%;
+    }
+    83.3%{
+        margin-left: -500%;
+    }
+    96.3%{
+        margin-left: -500%;
+    }
+    100%{
+        margin-left: -600%;
+    }
+}
+
+#carousel_social_media{
+    width: 500%;
+    animation: four-sildes 12s infinite linear;
+}
+#carousel_social_media img{
+    width: calc(100%/5);
+}
+@keyframes four-sildes {
+    0%{
+        margin-left: 0;
+    }
+    20%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: -100%;
+    }
+    45%{
+        margin-left: -100%;
+    }
+    50%{
+        margin-left: -200%;
+    }
+    55%{
+        margin-left: -200%;
+    }
+    75%{
+        margin-left: -300%;
+    }
+    80%{
+        margin-left: -300%;
+    }
+    100%{
+        margin-left: -400%;
+    }
+}
+
+#carousel_editing{
+    width: 400%;
+    animation: three-sildes 9s infinite linear;
+}
+#carousel_editing img{
+    width: calc(100%/4);
+}
+@keyframes three-sildes {
+    0%{
+        margin-left: 0;
+    }
+    27.33%{
+        margin-left: 0;
+    }
+    33.33%{
+        margin-left: -100%;
+    }
+    60.67%{
+        margin-left: -100%;
+    }
+    66.67%{
+        margin-left: -200%;
+    }
+    94%{
+        margin-left: -200%;
+    }
+    100%{
+        margin-left: -300%;
+    }
+}
+
+/* floating action button */
 body > a{
     width: 16vw;
     height: 16vw;
@@ -231,7 +388,7 @@ body > a:hover, body > a:focus{
         display: none;
     }
     nav ul{
-        width: 36vw;
+        width: 42vw;
         height: 100%;
         padding: 0;
         box-sizing: border-box;
@@ -239,6 +396,7 @@ body > a:hover, body > a:focus{
         align-items: center;
         position: static;
         background-color: transparent;
+        font-size: min(24pt, 1.5vw);
         transform: scaleX(1);
     }
     nav li{
@@ -253,10 +411,8 @@ body > a:hover, body > a:focus{
         opacity: 0.9;
     }
     nav a:hover, nav a:focus{
-        transform: translateY(-1vh);
+        color: var(--secondary);
         opacity: 1;
-        text-decoration: underline 2px solid var(--secondary);
-        text-underline-offset: 1vh;
     }
     
     header figure{
@@ -274,7 +430,7 @@ body > a:hover, body > a:focus{
         text-align: left;
     }
     header h1{
-        font-size: 8vh;
+        font-size: 4vw;
     }
     header p{
         width: 80%;
@@ -289,9 +445,10 @@ body > a:hover, body > a:focus{
         right: 5vw;
     }
 
-    #about{
-        padding-top: 15vh;
+    section{
+        padding-top: 18vh;
     }
+
     #about div{
         padding: 5% 15%;
         border-radius: 175px 0;
@@ -304,7 +461,7 @@ body > a:hover, body > a:focus{
         width: 50%;
     }
     #about h3{
-        font-size: 4vh;
+        font-size: 20pt;
     }
 
     body > a{
@@ -314,6 +471,17 @@ body > a:hover, body > a:focus{
         max-height: 75px;
         right: 3.2vh;
         bottom: 3.2vh;
+    }
+
+    #service{
+        transform: scale(0.75);
+    }
+    #service > div > div:first-child{
+        height: 7vw;
+        max-height: 75px;
+    }
+    #service button{
+        font-size: 18pt;
     }
 
 }
