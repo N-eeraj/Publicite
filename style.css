@@ -380,6 +380,68 @@ section{
     color: var(--tertiary);
 }
 
+/* footer */
+footer{
+    padding: 0 5vw 7vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    row-gap: 50px;
+    background-color: var(--tertiary);
+    color: var(--primary);
+}
+footer a{
+    color: var(--primary);
+    opacity: 0.8;
+}
+footer a:hover{
+    color: var(--secondary);
+    opacity: 1;
+}
+footer > figure > img{
+    width: 45vw;
+    filter: invert(1);
+}
+footer h3{
+    margin-bottom: 10px;
+    font-size: 20pt;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+footer h4{
+    margin-bottom: 10px;
+    font-size: 20pt;
+}
+footer ul{
+    list-style: none;
+}
+footer > figure li{
+    font-size: 16pt;
+    line-height: 28px;
+}
+footer > section{
+    padding: 0;
+}
+footer div li{
+    font-size: 14pt;
+    line-height: 32px;
+}
+footer div:first-child{
+    margin-bottom: 5vh;
+}
+footer div:last-child li{
+    line-height: 50px;
+}
+footer div:last-child a{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+footer div img{
+    width: 30px;
+}
+
 
 /* floating action button */
 body > a{
@@ -521,6 +583,43 @@ body > a:hover, body > a:focus{
         padding: 3vh 3vw;
     }
 
+    footer{
+        padding: 0 3vw 10vh 3vw;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    footer > figure > img{
+        width: 15vw;
+    }
+    footer > figure h3{
+        font-size: 14pt;
+    }
+    footer > figure li{
+        font-size: 10pt;
+        line-height: 18px;
+    }
+    footer > section{
+        min-width: 380px;
+        width: 60%;
+        max-width: 600px;
+        margin-top: 20vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer div > h4{
+        font-size: 12pt;
+    }
+    footer div li{
+        font-size: 10pt;
+        line-height: 20px;
+    }
+    footer div:last-child li{
+        line-height: 36px;
+    }
+    footer div:last-child img{
+        width: 25px;
+    }
 }
 
 @media screen and (min-width: 1024px)
