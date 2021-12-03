@@ -353,6 +353,34 @@ section{
     }
 }
 
+/* hiring section */
+#career{
+    padding: 5vw;
+}
+#career > h2{
+    color: var(--tertiary);
+}
+#career > div{
+    margin: 30px 0;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 50px;
+}
+#career article{
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    background-color: var(--secondary);
+}
+#career p{
+    margin-top: 10px;
+    color: var(--tertiary);
+}
+
+
 /* floating action button */
 body > a{
     width: 16vw;
@@ -484,6 +512,22 @@ body > a:hover, body > a:focus{
         font-size: 18pt;
     }
 
+    #career > div{
+        align-items: stretch;
+    }
+    #career article{
+        width: 48%;
+        min-height: 120px;
+        padding: 3vh 3vw;
+    }
+
+}
+
+@media screen and (min-width: 1024px)
+{
+    #career article{
+        min-width: 360px;
+    }
 }
 
 #loader{
